@@ -21,7 +21,7 @@ export default defineConfig({
     outline: [2, 3],
     socialLinks: [{ icon: 'github', link: 'https://github.com/indaco/tempo' }],
     editLink: {
-      pattern: 'https://github.com/indaco/tempo-www/edit/main/:path',
+      pattern: 'https://github.com/indaco/tempo-www/edit/main/docs/:path',
     },
     footer: {
       message:
