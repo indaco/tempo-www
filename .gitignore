@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+node_modules
+.yalc
+yalc.lock
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# vitepress
+.vitepress/dist
+.vitepress/cache
+
+# bash scripts
+scripts/
+
+# go-task
+Taskfile.yml
+
+# static-templ
+temp
