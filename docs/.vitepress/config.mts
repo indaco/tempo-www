@@ -35,6 +35,9 @@ export default defineConfig({
     config(md) {
       md.use(markdownItAnchor);
     },
+    image: {
+      lazyLoading: true,
+    },
   },
   vite: {
     plugins: [injectNPMPackageVersion(getVersionFromPackageJson())],
