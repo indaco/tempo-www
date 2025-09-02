@@ -29,6 +29,6 @@
     "prettier-plugin-packagejson": "^2.5.19",
     "rimraf": "^6.0.1",
     "vitepress": "^1.6.3",
-    "vue": "^3.5.18"
+    "vue": "^3.5.20"
   }
 }
