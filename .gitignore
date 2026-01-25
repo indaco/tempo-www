@@ -23,8 +23,8 @@ dist-ssr
 *.sw?
 
 # vitepress
-.vitepress/dist
-.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/cache
 
 # bash scripts
 scripts/
