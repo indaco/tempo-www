@@ -7,8 +7,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     items: [
       { text: 'Introduction', link: '/guide/' },
       { text: 'Installation', link: '/guide/installation' },
-      { text: 'Quickstart Demo', link: '/guide/quickstart' },
-      { text: 'Usage', link: '/guide/usage' },
+      { text: 'Getting Started', link: '/guide/getting-started' },
       { text: 'Standalone Sync', link: '/guide/standalone-sync' },
     ],
   },
@@ -20,8 +19,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       { text: 'init', link: '/cli/init' },
       { text: 'component', link: '/cli/component' },
       { text: 'variant', link: '/cli/variant' },
-      { text: 'register', link: '/cli/register' },
       { text: 'sync', link: '/cli/sync' },
+      { text: 'register', link: '/cli/register' },
     ],
   },
   {
@@ -36,17 +35,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     ],
   },
   {
-    text: 'Advanced',
+    text: 'Templates & Actions',
     items: [
       { text: 'Overview', link: '/advanced/' },
       { text: 'Templates', link: '/advanced/templates' },
       { text: 'Actions', link: '/advanced/actions' },
       { text: 'Extending Tempo', link: '/advanced/extending' },
     ],
-  },
-  {
-    text: 'Community',
-    link: '/contributing',
-    items: [{ text: 'Contributing', link: '/contributing' }],
   },
 ];

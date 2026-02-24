@@ -1,4 +1,29 @@
-# CLI Overview
+# CLI Reference
+
+`tempo` provides five commands that map to three distinct responsibilities:
+
+| Responsibility | Commands |
+|---|---|
+| Project setup | [`init`](./init.html) |
+| Scaffolding | [`component`](./component.html), [`variant`](./variant.html) |
+| Asset injection | [`sync`](./sync.html) |
+| Extensibility | [`register`](./register.html) |
+
+## Usage
+
+```bash
+tempo <command> [options] [arguments]
+```
+
+## Global Options
+
+```
+--help, -h     Show help
+--version, -v  Print the version
+```
+
+<details>
+<summary><strong>Full help output</strong></summary>
 
 ```bash
 NAME:
@@ -6,9 +31,6 @@ NAME:
 
 USAGE:
    tempo <command> [options] [arguments]
-
-VERSION:
-   v0.2.2
 
 DESCRIPTION:
    tempo simplifies asset management in templ-based projects, providing a seamless workflow for
@@ -29,3 +51,5 @@ GLOBAL OPTIONS:
    --help, -h     show help
    --version, -v  print the version
 ```
+
+</details>

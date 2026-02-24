@@ -10,7 +10,7 @@ import { sidebar } from './sidebar';
 export default defineConfig({
   title: 'tempo',
   description:
-    'Streamline asset management and scaffold components — all in Go.',
+    'Streamline asset management and scaffold components - all in Go.',
   lastUpdated: true,
   sitemap: {
     hostname: 'https://tempo.indaco.dev',

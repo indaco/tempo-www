@@ -12,7 +12,7 @@ You can customize this file to control how tempo manages:
 - Template generation and injection behavior
 - External functions and custom variables
 
-## 🗂 Default Configuration Example
+## Default Configuration Example
 
 ```yaml
 # The root folder for Tempo files
@@ -52,4 +52,4 @@ templates:
   - .tpl
 ```
 
-You can explore individual configuration options in detail on the [Options](../config/options.md) page.
+You can explore individual configuration options in detail on the [Options](../config/options.html) page.

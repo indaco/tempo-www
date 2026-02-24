@@ -21,7 +21,7 @@ templates:
 >
 > The _BEGIN_ / _END_ comments must stay exactly as shown.
 
-📌 Related topics:
+Related topics:
 
-- [`sync` command](../cli/sync.md)
-- [Standalone sync](../guide/standalone-sync.md)
+- [`sync` command](../cli/sync.html)
+- [Standalone sync](../guide/standalone-sync.html)

@@ -6,9 +6,9 @@ Use it to:
 
 - Keep styles and scripts separated from your components
 - Automatically inject updated content into guard-marked sections
-- Preserve your original source files — no overwrites
+- Preserve your original source files - no overwrites
 
-## 🚀 Basic Usage
+## Basic Usage
 
 ```bash
 tempo sync
@@ -19,10 +19,10 @@ This command scans your **input directory** for asset files (CSS/JS) and injects
 What it does:
 
 - **Extracts** CSS and JS from source files
-- **Injects** into `.templ` files at guard-marked locations
-- **Keeps components up to date** without manual copying.
+- **Injects** into `.templ` files at [guard-marked](../config/guard-markers.html) locations
+- **Keeps components up to date** without manual copying
 
-### 🔧 Common Workflow
+### Common Workflow
 
 Every time you update a `.css` or `.js` file in `assets/`, run:
 
@@ -30,7 +30,7 @@ Every time you update a `.css` or `.js` file in `assets/`, run:
 tempo sync
 ```
 
-It will update matching `.templ` files under `components/` — but leave your source files untouched.
+It will update matching `.templ` files under `components/` - but leave your source files untouched.
 
 <details>
 <summary><strong>Flags</strong></summary>
@@ -68,5 +68,4 @@ It will update matching `.templ` files under `components/` — but leave your so
 > **Live Reload:** If you're using a live reload tool like [air](https://github.com/air-verse/air), [templier](https://github.com/romshark/templier), or [watchexec](https://github.com/watchexec/watchexec), pass `--summary none` to reduce noise in the terminal.
 
 > [!NOTE]
-> **Not using scaffolding?**
-> 👉 [Standalone Sync Guide](../guide/standalone-sync.md).
+> **Not using scaffolding?** See the [Standalone Sync Guide](../guide/standalone-sync.html).

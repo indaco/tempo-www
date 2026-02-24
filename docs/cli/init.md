@@ -13,3 +13,5 @@ Use this to:
 ```bash
 tempo init
 ```
+
+This generates a `tempo.yaml` file in your project root. See [Configuration](../config/index.html) for a full explanation of available options.

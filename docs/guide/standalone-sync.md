@@ -1,20 +1,20 @@
-# Standalone sync
+# Standalone Sync
 
 The `sync` command can be used **independently** of the scaffolding flow (`define`, `new`, `register`). All it requires is:
 
-- A valid `tempo.yaml` file.
-- A project folder structure matching the paths defined in `tempo.yaml`.
-- **Guard markers** in your `.templ` files to specify where assets should be injected.
+- A valid `tempo.yaml` file
+- A project folder structure matching the paths defined in `tempo.yaml`
+- **Guard markers** in your `.templ` files to specify where assets should be injected
 
-This makes `tempo sync` a great option for developers who simply want to **synchronize CSS and JS assets** with their `.templ` files, without using the full scaffolding features.
+This makes `tempo sync` a great option for developers who want to **synchronize CSS and JS assets** with their `.templ` files, without using the full scaffolding features.
 
-## 💥 Use Cases for Standalone sync
+## Use Cases
 
-- Already have components but want automated asset injection.
-- Only need asset handling without using the full scaffolding flow.
-- Maintain existing folder structures while benefiting from tempo’s synchronization features.
+- Already have components but want automated asset injection
+- Only need asset handling without using the full scaffolding flow
+- Maintain existing folder structures while benefiting from tempo's synchronization
 
-## 🛠️ Example Standalone Workflow
+## Example Workflow
 
 Start by creating a Go module using the `go mod init` [command](https://go.dev/ref/mod#go-mod-init).
 
@@ -60,20 +60,10 @@ Start by creating a Go module using the `go mod init` [command](https://go.dev/r
 
 5. **Result:**
 
-CSS and JS are injected into the corresponding `.templ` files, replacing the content between the guard markers.
+   CSS and JS are injected into the corresponding `.templ` files, replacing the content between the guard markers.
 
-## 📋 About Guard Markers
+## Guard Markers
 
-`tempo sync` uses **guard markers** to locate where CSS and JS should be injected inside `.templ` files.
+`tempo sync` uses guard markers to locate injection points in `.templ` files. If no markers are found, the file is skipped.
 
-By default, it looks for:
-
-```templ
-/* [tempo] BEGIN - Do not edit! This section is auto-generated. */
-/* [tempo] END */
-```
-
-Only the text inside the brackets (`[tempo]`) is configurable — see [guard_marker](../config/guard-markers.md) for details.
-
-> [!IMPORTANT]
-> If no guard markers are present, `tempo sync` will **skip** the file, ensuring only intended sections are updated.
+See [Guard Markers configuration](../config/guard-markers.html) for the default format and how to customize the marker label.

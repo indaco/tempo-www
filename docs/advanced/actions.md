@@ -1,6 +1,6 @@
 # Actions
 
-Actions define **how templates should be processed**. They are stored in `.tempo-files/actions/` as JSON files.
+Actions define **how templates should be processed**. They are stored in `.tempo-files/actions/` as JSON files. Actions reference template files by path - see [Templates](./templates.html) for the variables and functions available inside those files.
 
 Example **component action file (component.json)**:
 

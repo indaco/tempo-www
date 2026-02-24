@@ -1,9 +1,8 @@
-
 # Templates
 
-Templates define the **structure of components and variants**. They use **Go’s `text/template`** engine along with custom template functions provided by Tempo.
+Templates define the **structure of components and variants**. They use **Go's `text/template`** engine along with custom template functions provided by Tempo.
 
-## 📌 Default Template Functions
+## Default Template Functions
 
 Tempo provides a set of built-in helper functions:
 
@@ -15,7 +14,7 @@ Tempo provides a set of built-in helper functions:
 | `normalizePath`    | Normalizes a path string.                                       |
 | `isEmpty`          | Checks if a string is empty.                                    |
 
-## 📌 Built-in Template Variables
+## Built-in Template Variables
 
 Tempo automatically provides a set of **predefined variables** that can be used inside templates. These variables come from the configuration and CLI context during execution.
 
@@ -32,8 +31,10 @@ Tempo automatically provides a set of **predefined variables** that can be used 
 | `CssLayer`      | The CSS layer name associated with component styles.                  |
 | `GuardMarker`   | Placeholder used in _templ_ files to mark auto-generated sections.    |
 
-## 📌 Extending Template Functions
+## Extending Template Functions
 
 Tempo supports external function providers, allowing you to integrate additional helper functions into your templates.
 
-See the full guide in [Extending Tempo](./extending.md).
+See the full guide in [Extending Tempo](./extending.html).
+
+Templates are executed by actions. See [Actions](./actions.html) to understand how output paths and rendering are controlled.

@@ -4,7 +4,7 @@ import { getVersionFromPackageJson } from '../../src/lib/plugins/injectVersion';
 const pkgVersion = getVersionFromPackageJson();
 
 export const nav: DefaultTheme.Config['nav'] = [
-  { text: 'Quickstart', link: '/guide/quickstart' },
+  { text: 'Getting Started', link: '/guide/getting-started' },
   { text: 'Guide', link: '/guide/' },
   { text: 'CLI', link: '/cli/' },
   {

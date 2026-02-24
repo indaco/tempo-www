@@ -7,12 +7,12 @@ The `register` command extends `tempo` by allowing you to:
 
 ## Register a function provider
 
-This command enhances `tempo`’s templates by loading custom functions from a:
+This command enhances `tempo`'s templates by loading custom functions from a:
 
-- 🌐 Remote Git repository
-- 🗂️ Local Go module
+- Remote Git repository
+- Local Go module
 
-Registered functions become available in .`gotxt` and `.templ` templates during generation.
+Registered functions become available in `.gotxt` and `.templ` templates during generation.
 
 <details>
 <summary><strong>Flags</strong> (<code>tempo register functions</code>)</summary>
@@ -28,14 +28,16 @@ Registered functions become available in .`gotxt` and `.templ` templates during 
 </dl>
 </details>
 
-### 🌐 Register from a Git repository
+### Register from a Git repository
 
 ```bash
 tempo register functions --name sprig --url https://github.com/indaco/tempo-provider-sprig.git
 ```
 
-### 🗂️ Register from a local Go module
+### Register from a local Go module
 
 ```bash
 tempo register functions --name myprovider --path ./my-template-funcs-go-module
 ```
+
+For implementation details and YAML-based registration, see [Extending Tempo](../advanced/extending.html).

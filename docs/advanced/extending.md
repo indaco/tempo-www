@@ -2,12 +2,12 @@
 
 Customize `tempo`’s templating system by:
 
-- Passing custom variables with [`user_data`](../config/user-data.md)
+- Passing custom variables with [`user_data`](../config/user-data.html)
 - Registering external function providers (local or remote)
 - Implementing your own Go-based template functions
 - Using prebuilt providers like the `sprig` one for extra utilities
 
-These features give you control over how components and variants are generated — without touching core logic.
+These features give you control over how components and variants are generated - without touching core logic.
 
 ## Registering External Function Providers
 

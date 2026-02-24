@@ -2,7 +2,7 @@
 
 The `user_data` key lets you define custom values that are passed into your templates as `.UserData`.
 
-These values can be strings, booleans, numbers, or nested maps — and are available in all your component and variant templates.
+These values can be strings, booleans, numbers, or nested maps - and are available in all your component and variant templates.
 
 > [!INFO]
 > These values are available inside any `.gotxt` or `.templ` file rendered by `tempo`.

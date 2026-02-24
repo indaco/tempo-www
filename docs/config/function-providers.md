@@ -3,7 +3,7 @@
 The `function_providers` array allows you to load external helper functions into your templates.
 Each provider can be a local Go module or a remote Git repository.
 
-## 📄 YAML Format
+## YAML Format
 
 ```yaml
 templates:
@@ -22,4 +22,4 @@ templates:
 | `type`  | `string` | Specifies if the provider is a local path or a remote url (Git repo). |
 | `value` | `string` | The actual path or URL where the provider is located.                 |
 
-For CLI usage, examples, and implementation details, see Extending Tempo → Function Providers.
+For CLI usage, examples, and implementation details, see [Extending Tempo](../advanced/extending.html).

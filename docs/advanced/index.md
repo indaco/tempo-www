@@ -1,19 +1,14 @@
-# Templates & Actions Overview
+# Templates & Actions
 
-`tempo` uses Go’s standard `text/template` engine, enhanced with user-defined data and optional custom functions. It lets you scaffold components and variants by combining:
+`tempo`'s scaffolding system is built on two complementary concepts:
 
-- **Templates** – which define the structure of your files.
-- **Actions** – which specify how and where those templates are rendered.
+- **Templates** define the content and structure of generated files. They use Go's `text/template` engine and have access to built-in variables and optional custom functions.
+- **Actions** declare which templates to render, where to write the output, and whether to create files or copy folders.
 
-This system is used in:
+When you run `tempo component define` or `tempo variant define`, both a template set and a corresponding action file are created. When you run `tempo component new` or `tempo variant new`, the action file is executed against the templates to produce your component files.
 
-- `tempo component define` → for component templates and actions
-- `tempo variant define` → for variant-specific scaffolding
+Explore each topic in detail:
 
-> The goal is to **generate clean, consistent file structures** based on your project layout and config.
-
-To learn more, explore:
-
-- [Templates](./templates.md) – template variables, functions, and syntax
-- [Actions](./actions.md) – defining and using action JSON
-- [Extending Tempo](./extending.md) – user data & function providers
+- [Templates](./templates.html) - template variables, functions, and syntax
+- [Actions](./actions.html) - defining and using action JSON
+- [Extending Tempo](./extending.html) - user data & function providers

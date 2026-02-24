@@ -6,9 +6,9 @@
 go install github.com/indaco/tempo/cmd/tempo@latest
 ```
 
-## 2. Local Tool Install (Go 1.24+)
+## 2. Local Tool Install (Go 1.25+)
 
-With Go 1.24 or greater installed, you can install `tempo` locally in your project by running:
+With Go 1.25 or greater installed, you can install `tempo` locally in your project by running:
 
 ```bash
 go get -tool github.com/indaco/tempo/cmd/tempo@latest
@@ -22,7 +22,7 @@ go tool tempo
 
 ## 3. Prebuilt binaries
 
-Download the pre-compiled binaries from the [releases page](https://github.com/indaco/tempo/releases) and move the binary to a folder in your system’s PATH.
+Download the pre-compiled binaries from the [releases page](https://github.com/indaco/tempo/releases) and move the binary to a folder in your system's PATH.
 
 ## 4. Build from Source
 
@@ -33,3 +33,5 @@ make install # or: task install
 ```
 
 This builds and installs the binary from source using make or task.
+
+**Next:** [Getting Started →](./getting-started.html)
